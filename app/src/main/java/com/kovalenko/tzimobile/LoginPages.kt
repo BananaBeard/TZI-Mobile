@@ -1,5 +1,6 @@
 package com.kovalenko.tzimobile
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
@@ -27,8 +28,8 @@ class AdminLoginFragment : Fragment() {
                             .setAction("Action", null).show()
                     counter = 3
                     var callingActivity: MainActivity = activity as MainActivity
-//                    var intent = Intent(callingActivity, AdminActivity::class.java)
-//                    startActivity(intent)
+                    var intent = Intent(callingActivity, AdminActivity::class.java)
+                    startActivity(intent)
                 } else {
                     counter--
                     if (counter == 0) {
